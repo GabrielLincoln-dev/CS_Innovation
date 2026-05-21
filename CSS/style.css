@@ -1,0 +1,325 @@
+.slideshow .col:first-child>span >*{
+    opacity: 0;
+}
+
+.slideshow .col:first-child>span:first-child>*{
+    animation: fadeText .5s ease 0.3s forwards;
+}
+
+.slideshow .col:first-child>span:nth-child(2)>*{
+    animation: fadeText .5s ease 1.2s forwards;
+}
+
+.slideshow .col:first-child>span{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slideshow .col:first-child > span:first-child::before{
+    animation: flash 1s ease 0s forwards;
+}
+
+.slideshow .col:first-child > span:nth-child(2)::before{
+    animation: flash 1s ease 1s forwards;
+}
+
+.slideshow .col:first-child > span::before{
+    content: "";
+    width: 100%;
+    height: 91px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    }
+
+    .slideshow .col:last-child img{
+        position: relative;
+        top: 0;
+        animation: pong 10s ease-in-out 0s infinite;
+    }
+
+@keyframes fadeText {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0%{
+        background:#f9d423;
+        top: -100px;
+        
+    }
+    100%{
+        background: #f9d423;
+        top: 210px;
+        opacity: 0;
+    }
+}
+
+@keyframes pong {
+    0%{top: 0;}
+    50%{top: 20px;}
+    100%{top: 0;}
+}
+
+
+
+/* Configuração da barra de navegação */
+nav.navbar {
+    background-color: #61127b; /* Roxo da logo */
+}
+
+/* Estilo global da página */
+body {
+    background-color: #8a4a9e; /* Roxo mais claro que o da logo */
+    color: #ffffff; /* Textos em branco */
+}
+
+/* Arredondamento da logo para esconder cantos do JPG */
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+/* Estilo do botão de expandir no mobile */
+.navbar-toggler {
+    border: 1px solid #f9d423;
+}
+
+/* Troca da cor do ícone hamburguer para amarelo via SVG */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23f9d423' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Links do menu */
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+/* Hover nos links do menu */
+.navbar-nav .nav-link:hover {
+    color: #f9d423;
+}
+
+/* Classe para destacar a palavra 'sucesso' em amarelo */
+.text-sucess {
+    color: #f9d423 !important; /* Amarelo da identidade visual */
+}
+
+/* Botão de contato da navbar */
+.navbar .btn-contact {
+    display: block; 
+    width: fit-content; 
+    margin: 1rem auto; /* Centraliza no mobile */
+    color: #f9d423;
+    border: 1px solid #f9d423;
+    background-color: transparent;
+}
+
+/* Remove contorno preto/azul ao clicar nos botões */
+.navbar .btn-contact:focus,
+.navbar .btn-contact:active,
+.navbar-toggler:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+/* Efeito hover no botão de contato */
+.navbar .btn-contact:hover {
+    background-color: #f9d423;
+    color: #61127b;
+}
+
+/* Botão da seção de cases */
+.btn-cases {
+    background-color: #f9d423;
+    color: #60127a;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Hover no botão de cases */
+.btn-cases:hover {
+    background-color: #60127a;
+    color: #f9d423;
+}
+
+/* Imagem da lâmpada: filtros para mudar de preto para amarelo e remover fundo */
+.img-hero {
+    max-width: 100%;
+    height: auto;
+    mix-blend-mode: screen; /* Faz o novo fundo preto desaparecer */
+    filter: invert(1) sepia(1) saturate(20) hue-rotate(345deg) brightness(1.2); /* Transforma preto em amarelo */
+}
+
+.companies .imagens {
+    position: relative;
+    height: 200px; /* Altura aumentada para logos maiores */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animações de Transição */
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOutRight {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(100%); opacity: 0; }
+}
+
+.animate-in {
+    animation: slideInLeft 0.6s ease forwards;
+}
+
+.animate-out {
+    animation: slideOutRight 0.6s ease forwards;
+}
+
+/* Regras para telas maiores (Desktop) */
+@media(min-width: 64rem){
+    .menu-principal li{
+        position: relative;
+    }
+
+    /* Efeito de sublinhado amarelo no hover dos itens do menu */
+    .menu-principal li:hover::before{
+        content: "";
+        width: 80%;
+        transition: .2s all ease;
+        border-color: #f9d423; /* Sublinhado amarelo */
+    }
+
+    /* Estrutura base do sublinhado (invisível por padrão) */
+    .menu-principal li::before {
+        content:"" ;
+        position: absolute;
+        bottom: 5px;
+        z-index: 1;
+        width: 0;
+        border : 2px solid transparent;
+        left: 0;
+        right: 0;
+        border-radius :119px;
+        transition: .2s all ease;
+        margin: 0 auto;
+    }
+
+    /* Alinhamento do botão de contato para a direita em telas grandes */
+    .navbar .btn-contact {
+        margin: 0 0 0 1rem;
+    }
+
+    .slideshow .col:first-child>span{
+        /* Garante que o título e texto do slideshow permaneçam centralizados em telas grandes */
+        text-align: center;
+    }
+
+}
+
+/* Ajuste da cor do texto nos cards de Missão, Visão e Valores */
+.services .card {
+    color: #61127b;
+}
+
+/* Garante que as logos tenham o mesmo tamanho e fiquem centralizadas */
+.companies img {
+    height: 160px; /* Aumentado de 110px para 160px */
+    width: auto;
+    max-width: 350px; /* Aumentado para manter a proporção de logos largas */
+    object-fit: contain;
+    margin: 0 auto;
+    border: 4px solid #61127b; /* Contorno roxo */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo leve para destacar no amarelo */
+}
+
+.img-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    outline: none; /* Remove a borda de foco ao clicar */
+}
+
+/* Classes customizadas para a identidade visual */
+.bg-brand-yellow {
+    background-color: #f9d423 !important;
+}
+
+.text-brand-purple {
+    color: #61127b !important;
+}
+
+/* Borda amarela personalizada para manter a identidade visual em elementos de destaque */
+.border-brand-yellow {
+    border-color: #f9d423 !important;
+}
+
+/* Estilização de foco nos inputs do formulário para usar o roxo da marca */
+.form-control:focus {
+    border-color: #61127b;
+    box-shadow: 0 0 0 0.25rem rgba(97, 18, 123, 0.25);
+}
+
+/* Botões de redes sociais no rodapé: formato circular e transição suave */
+.social-btn {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Efeito hover nos botões sociais trocando as cores para o amarelo da marca */
+.social-btn:hover {
+    background-color: #f9d423;
+    color: #61127b !important;
+    border-color: #f9d423;
+}
+
+/* Ajuste para garantir que as imagens de largura total não criem rolagem horizontal indesejada */
+.full-width-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Padronização global de parágrafos para garantir consistência visual */
+p {
+    font-size: 1.15rem !important; /* Tamanho único para todos os textos */
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Seção de portfólio de criativos com fundo para disfarçar o tamanho da imagem */
+.flyer-section-bg {
+    background-color: #ffffff; /* Cor de fundo para combinar com o fundo do design dos flyers */
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo para a imagem de flyers: menor para manter a densidade de pixels e qualidade */
+.img-flyer {
+    max-width: 900px; /* Limita a largura para não perder nitidez */
+    width: 95%;
+    height: auto;
+    border-radius: 8px;
+}
