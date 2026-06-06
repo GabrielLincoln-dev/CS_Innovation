@@ -1,315 +1,616 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Configurações básicas e importação de fontes/estilos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS Innovation</title>
+    <title>CS Innovation | Marketing Digital e Design em Arujá - Médicos, Imobiliárias e Lojas</title>
+    <meta name="description" content="Agência de marketing digital em Arujá especializada em consultórios médicos, imobiliárias e lojas locais. Estratégias de design, tráfego pago e posicionamento para atrair clientes.">
+    <meta name="keywords" content="marketing digital aruja, design estrategico aruja, marketing para medicos aruja, marketing imobiliario aruja, propaganda para lojas aruja">
+    <meta name="author" content="CS Innovation">
+    
+    <!-- Open Graph (Redes Sociais) -->
+    <meta property="og:title" content="CS Innovation | Marketing Digital e Design em Arujá">
+    <meta property="og:description" content="Transforme seu negócio em Arujá com marketing digital especializado para saúde, imobiliário e varejo.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cs-innovation-six.vercel.app">
+    <meta property="og:image" content="https://cs-innovation-six.vercel.app/img/logo CS .png">
 
-    <!-- Bibliotecas externas: Font Awesome e Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
-    <!-- Arquivo de estilos personalizado -->
-    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Bibliotecas Externas: Bootstrap e Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org para SEO Local -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "CS Innovation",
+      "description": "Especialistas em marketing digital e design para médicos, imobiliárias e lojas em Arujá.",
+      "url": "https://cs-innovation-six.vercel.app",
+      "telephone": "+5511958774637",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Arujá",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      }
+    }
+    </script>
 </head>
 <body>
-    
-    <!-- Cabeçalho: Menu de Navegação -->
-    <nav class="navbar navbar-expand-lg p-3 shadow-sm mb-5">
-        <div class="container">
-            <!-- Logotipo da empresa -->
-            <a href="#" class="navbar-brand">
-                <img src="img/CS.jpg" alt="logo" height="35"> 
-            </a>
 
-             <!-- Botão de expandir menu no mobile (ícone hamburguer) -->
-             <button class="navbar-toggler shadow-none" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false"> 
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Links e botões internos da navbar -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto menu-principal text-center">
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="#inicio">Inicio</a>
-                    </li>
-
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="#sobre">Sobre</a>
-                    </li>
-
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="#servicos">serviços</a>
-                    </li>
-
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="#projetos">Projetos Sociais</a>
-                    </li>
-
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="#criativos">Portfólio</a>
-                    </li>
-                </ul>
-
-                <!-- Link de contato atualizado para apontar para a nova seção -->
-                <a href="#contato" class="btn btn-contact text-decoration-none">
-                    Contato
+    <header>
+        <nav class="navbar navbar-expand-lg custom-nav">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo CS .png" alt="CS Innovation Logo" class="img-fluid">
                 </a>
 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#main-content">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#nichos">Nichos atendidos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ceo">Sobre a CEO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#diferenciais">Diferenciais</a></li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
 
 
-        </div>
+    <main id="main-content">
 
-    </nav>
-    
-    <!-- Seção Principal (Hero/Slideshow) -->
-    <div id="inicio" class="container slideshow mb-5">
-        <div class="row row-cols-1 row-cols-md-2 align-items-center">
-            
-            <!-- Lado Esquerdo: Textos e Chamada (CTA) -->
-            <div class="col overflow-hidden">
-                <span class="d-block w-100 h-50">
-                    <!-- Centralizando o título principal no desktop -->
-                    <h2 class="display-4 text-center">Transforme ideias em 
-                        <span class="text-sucess"><b>sucesso</b>!</span></h2>
-                </span>
-
-            <span class="d-block w-100 h-50">
-                <!-- Descrição da empresa -->
-                <p>
-                    A CS Innovation é uma consultoria especializada em marketing e design estratégico, ajudando empresas a
-                    se destacarem no mercado com soluções criativas e eficazes. Com experiência em 
-                    grandes empresas e certificações renomadas, entregamos resultados personalizados para cada cliente.
-                </p>
-
-                <!-- Botão de ação ajustado em tamanho e vinculado à seção de clientes/cases -->
-                <a href="#clientes" class="btn btn-cases px-5 py-2 shadow-sm text-decoration-none">
-                    Conheça nossos cases de sucesso!
-                </a>                
-            </span>
-        </div>
-
-        <!-- Lado Direito: Imagem de Destaque -->
-        <div class="col">
-            <img src="img/7946.jpg" alt="lampada" class="img-fluid img-hero">
-        </div>
-
-        </div>
-
-    </div>
-
-    <div id="servicos" class="container services">
-        <h2 class="text-center my-4 mt-5">Bem vindo a CS Innovation</h2>
-        <p class="display-6 text-center mb-5">
-            Missão, visão e valores
-        </p>
-
-         <!-- Seção missão, visão valores -->
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-                <div class="card h-100 border-0 shadow py-5">
-                    <div class="text-center p-3">
-                        <i class="fas fa-bullseye fa-3x text-brand-purple"></i> <!-- Ícone para Missão -->
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Missão</h5>
-                        <p class="card-text text-center">Criar estratégias inovadoras de marketing 
-                            e design que impulsionem o crescimento e a identidade das empresas,
-                             gerando impacto positivo no mercado.
+        <!-- --- SEÇÃO HERO --- -->
+        <section class="hero-section">
+            <div class="container-fluid ps-0 pe-0">
+                <div class="row align-items-center g-0">
+                    <div class="col-lg-6 text-content ps-4 ps-md-5 ps-lg-5">
+                        <h1 class="hero-title">
+                            TRANSFORME IDEIAS EM<br>
+                            <span class="highlight">SUCESSO!</span>
+                        </h1>
+                        <p class="hero-description">
+                            A CS Innovation desenvolve soluções em marketing, comercial,
+                            design estratégico e tecnologia para empresas que desejam
+                            crescer, fortalecer sua presença digital e gerar mais resultados.
+                            Com estratégias personalizadas e visão inovadora, ajudamos
+                            negócios a se posicionarem de forma profissional e competitiva
+                            no mercado.
                         </p>
-                        <br>
+                        <a href="#contato" class="btn btn-hero">Analisar meu negócio</a>
+                    </div>
+
+                    <div class="col-lg-6 d-flex align-items-end justify-content-end">
+                        <div class="hero-image-container">
+                            <img src="img/cassihero.png" alt="CEO CS Innovation" class="img-fluid ceo-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- --- SOLUÇÕES DIGITAIS --- -->
+        <section class="hero-continuation">
+            <div class="container-fluid px-0">
+                <div class="row align-items-center g-0">
+                    <div class="col-lg-6">
+                        <div class="hero-image-container">
+                            <img src="img/cassipchero.png" alt="Soluções Digitais" class="img-fluid solutions-img">
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 text-content px-4 px-lg-5">
+                        <h2 class="hero-title">
+                            Soluções digitais pensadas para o 
+                            <span class="highlight">seu tipo de negócio.</span>
+                        </h2>
+                        <div class="hero-description">
+                           <p> Cada segmento tem uma dor diferente. Por isso,
+                                criamos estratégicas personalizadas para atrair
+                                clientes, fortalecer sua presença e gerar mais
+                                oportunidades.
+                                <br><br>
+                                Por isso, não basta apenas oferecer um bom serviço. É importante que sua empresa seja encontrada com
+                                facilidade quando um potencial cliente estiver procurando exatamente o que você oferece.
+                                <br><br>
+                                Para imobiliárias, uma presença digital bem estruturada ajuda a divulgar imóveis, gerar contatos qualificados
+                                e fortalecer a credibilidade da marca. Para consultórios médicos, estar bem posicionado na internet transmite confiança e facilita o agendamento de consultas. Já para lojas locais, o marketing digital é uma forma eficiente de atrair clientes da região e aumentar as vendas.
+                                <br><br>
+                                Com estratégias como criação de sites profissionais, otimização para o Google, gestão de redes sociais e campanhas de anúncios, é possível alcançar pessoas que realmente têm interesse nos seus serviços ou produtos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- --- NICHOS ATENDIDOS --- -->
+        <section id="nichos" class="nichos-section py-4">
+            <div class="container py-4">
+                <h2 class="section-title mb-5">Nichos atendidos</h2>
+                
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card h-100 nicho-card border-0">
+                            <img src="img/medico.png" class="card-img-top" alt="Consultórios / Saúde">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title">Consultórios / Saúde</h3>
+                                <p class="card-text">
+                                    Mais autoridade, mais confiança e mais agendamentos. 
+                                    Conduzimos consultórios e profissionais da saúde a se 
+                                    posicionarem melhor no digital, atraírem pacientes e 
+                                    transmitirem credibilidade.
+                                </p>
+                                <a href="#" class="btn btn-nicho mt-auto">QUERO ATRAIR PACIENTES</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 nicho-card border-0">
+                            <img src="img/imovel.png" class="card-img-top" alt="Imobiliárias / Corretores">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title">Imobiliárias / Corretores</h3>
+                                <p class="card-text">
+                                    Mais visibilidade, mais leads e mais oportunidades de venda. 
+                                    Criamos estratégias para destacar imóveis, fortalecer a 
+                                    imagem do corretor e gerar contatos mais qualificados.
+                                </p>
+                                <a href="#" class="btn btn-nicho mt-auto">QUERO CAPTAR CLIENTES</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100 nicho-card border-0">
+                            <img src="img/loja1.png" class="card-img-top" alt="Moda / Lojas">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <h3 class="card-title">Moda / Lojas</h3>
+                                <p class="card-text">
+                                    Mais desejo, mais alcance e mais conversão. 
+                                    Desenvolvemos ações para valorizar produtos, 
+                                    impulsionar a marca e aumentar o interesse do público local.
+                                </p>
+                                <a href="#" class="btn btn-nicho mt-auto">QUERO VENDER MAIS</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- --- DIVISOR VISUAL --- -->
+        <section class="title-divider-section py-4">
+            <div class="container-fluid px-0">
+                <h2 class="title-divider-text">O QUE A SUA EMPRESA GANHA COM ISSO?</h2>
+            </div>
+        </section>
+
+
+        <!-- --- CARROSSEL DE GANHOS --- -->
+        <section class="carousel-section pb-4">
+            <div class="container">
+                <div id="ganhosCarousel" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#ganhosCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#ganhosCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#ganhosCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#ganhosCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#ganhosCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="ganhos-card mx-auto">
+                                <div class="d-flex align-items-center p-4">
+                                    <img src="img/8.png" class="ganhos-icon ganhos-icon-lg" alt="Presencial Digital">
+                                    <div class="ganhos-text-wrapper ms-3">
+                                        <h3 class="card-title text-center">PRESENCIAL DIGITAL MAIS PROFISSIONAL</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ganhos-card mx-auto">
+                                <div class="d-flex align-items-center p-4">
+                                    <img src="img/9.png" class="ganhos-icon ganhos-icon-lg" alt="Comunicação">
+                                    <div class="ganhos-text-wrapper ms-3">
+                                        <h3 class="card-title text-center">COMUNICAÇÃO ALINHADA AO SEU PÚBLICO</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ganhos-card mx-auto">
+                                <div class="d-flex align-items-center p-4">
+                                    <img src="img/10.png" class="ganhos-icon" alt="Confiança">
+                                    <div class="ganhos-text-wrapper ms-3">
+                                        <h3 class="card-title text-center">MAIS CONFIANÇA NA HORA DA COMPRA</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ganhos-card mx-auto">
+                                <div class="d-flex align-items-center p-4">
+                                    <img src="img/11.png" class="ganhos-icon" alt="Leads">
+                                    <div class="ganhos-text-wrapper ms-3">
+                                        <h3 class="card-title text-center">MAIS CHANCES DE GERAR LEADS E VENDAS</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="ganhos-card mx-auto">
+                                <div class="d-flex align-items-center p-4">
+                                    <img src="img/12.png" class="ganhos-icon ganhos-icon-lg" alt="Concorrência">
+                                    <div class="ganhos-text-wrapper ms-3">
+                                        <h3 class="card-title text-center">UMA MARCA QUE SE DESTACA DA CONCORRÊNCIA</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#ganhosCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#ganhosCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- --- SEÇÃO CTA --- -->
+        <section id="cta-analise" class="cta-section py-2">
+            <div class="container py-2">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 text-content text-center text-lg-start">
+                        <h2 class="cta-title text-white mb-4">
+                            PRONTO PARA ENTENDER O QUE O<br>
+                            SEU NEGÓCIO PRECISA PARA CRESCER?
+                        </h2>
+                        <p class="cta-description text-white mb-4">
+                            Solicite uma análise estratégica e descubra as melhores oportunidades para sua empresa.
+                        </p>
+                        <!-- Imagem visível apenas no Mobile (entre o texto e o botão) -->
+                        <img src="img/celular.png" alt="Análise Estratégica Mobile" class="img-fluid cta-image d-lg-none mb-4">
                         
-
-                </div>
-            </div>            
-        </div>
-        <div class="col">
-                <div class="card h-100 border-0 shadow py-5">
-                    <div class="text-center p-3">
-                        <i class="fas fa-eye fa-3x text-brand-purple"></i> <!-- Ícone para Visão -->
+                        <a href="https://wa.me/5511958774637" class="btn btn-cta d-inline-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp me-2" viewBox="0 0 16 16">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.06 3.973L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.959h.004c4.368 0 7.926-3.558 7.93-7.93a7.9 7.9 0 0 0-2.327-5.601zM7.994 14.52a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+                            </svg>
+                            SOLICITE ANÁLISE ESTRATÉGICA
+                        </a>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Visão</h5>
-                        <p class="card-text text-center">Ser referência no mercado de consultoria em marketing e design,
-                             ajudando empresas a alcançar seu potencial máximo com soluções criativas e eficazes.
-                        </p>
-
-                </div>
-            </div>            
-        </div>
-        <div class="col">
-                <div class="card h-100 border-0 shadow py-5">
-                    <div class="text-center p-3">
-                        <i class="fas fa-handshake fa-3x text-brand-purple"></i> <!-- Ícone para Valores -->
+                    <!-- Coluna da imagem visível apenas no Desktop -->
+                    <div class="col-lg-6 mt-4 mt-lg-0 text-center d-none d-lg-block">
+                        <img src="img/celular.png" alt="Análise Estratégica" class="img-fluid cta-image">
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Valores</h5>
-                        <p class="card-text text-center">Criatividade e Inovação
-                             Comprometimento com Resultados 
-                            Transparência e Ética 
-                            Personalização e Exclusividade Excelência no Atendimento
-                        </p>
-
                 </div>
             </div>
-        </div>
-        </div> <!-- Fechamento correto da row de serviços -->
-    </div> <!-- Fechamento correto do container de serviços -->
+        </section>
 
-    <!-- Seção Sobre Mim: Apresentação da fundadora antes do carrossel -->
-    <div id="sobre" class="container my-5 py-5">
-        <div class="row align-items-center">
-            <div class="col-md-5 text-center mb-4 mb-md-0">
-                <!-- Foto com borda arredondada e amarela conforme identidade visual -->
-                <img src="img/cassi.png" alt="Fundadora" class="img-fluid rounded-circle border border-4 border-brand-yellow shadow" style="width: 350px; height: 350px; object-fit: cover;">
-            </div>
-            <div class="col-md-7">
-                <!-- Centralizando o título da seção Sobre Mim -->
-                <h2 class="text-brand-purple display-5 fw-bold text-center">Sobre Mim</h2>
-                <p>
-                    Sou uma profissional de marketing com vasta
-                    experiência, incluindo trabalhos em grandes
-                    empresas como o Hospital Albert Einstein.
-                </p>
-                <p>
-                    Tenho formação em Marketing, um curso de Liderança pela
-                    Harvard Business School e expertise na criação de
-                    estratégias de branding e identidade visual para
-                    empresas de diversos segmentos.
 
-                </p>
-                <p>
-                    Acredito que a inovação aliada ao design estratégico é a chave para o crescimento sustentável. 
-                    Vamos juntos construir o futuro da sua empresa?
+        <!-- --- SERVIÇOS --- -->
+        <section id="servicos" class="servicos-section py-0">
+            <div class="container pt-5 pb-4">
+                <h2 class="section-title mb-3">Serviços</h2>
+                <p class="section-subtitle mb-4 mx-auto text-center">
+                    COMO IMPULSIONAMOS NEGÓCIOS?
                 </p>
             </div>
-        </div>
-    </div>
-
-        <!-- Adicionado ID 'clientes' para permitir a ancoragem vinda do botão hero -->
-        <div id="clientes" class="container-fluid bg-brand-yellow my-5 p-5">
-            <div class="container companies">  
-                <h2 class=" text-center text-brand-purple mb-5 pb-3">Nossos Clientes
-                </h2>
-
-                <div class="imagens">
-                    <div class="img-item">
-                        <img src="img/skygames.png" alt="Sky Games" class="mx-auto d-block"> 
-                    </div>
-
-                <div class="img-item">
-                        <img src="img/fvj.png" alt="Fases da vida com Jesus" class="mx-auto d-block"> 
-                    </div>
-
-                <div class="img-item">
-                        <img src="img/gw.png" alt="GW" class="mx-auto d-block"> 
-                    </div>
-
+            <div class="servicos-highlight-box">
+                <div class="container">
+                    <p class="mb-0">
+                        Unimos Marketing, Design, Tecnologia e estratégia comercial para criar soluções personalizadas que geram resultados reais.
+                    </p>
                 </div>
-
             </div>
-        </div> <!-- Fechamento do container-fluid bg-primary -->
 
-    <!-- Seção Projetos Sociais: Imagem centralizada ocupando toda a largura da seção -->
-    <section id="projetos" class="container-fluid p-0 my-5">
-        <!-- Adicionado text-center ao container para centralizar o título d-inline-block -->
-        <div class="container text-center">
-            <!-- Título centralizado em amarelo conforme identidade visual -->
-            <h2 class="text-center text-sucess display-6 fw-bold mb-4">Nossos Projetos Sociais</h2>
-        </div>
-        <div class="w-100 overflow-hidden text-center">
-            <!-- Espaço para inserir a imagem do projeto social -->
-            <img src="img/social.png" alt="Impacto Social CS Innovation" class="full-width-img shadow-sm mb-4">
-            
-            <!-- Container para centralizar e dar margem ao texto expandido -->
-            <div class="container px-4">
-                <p>
-                    Acreditamos que o marketing e o design são ferramentas poderosas para a transformação social. Na <strong>CS Innovation</strong>, dedicamos nosso conhecimento técnico para impulsionar organizações que geram um impacto real e positivo na vida das pessoas.
-                </p>
-                <p>
-                    Um exemplo marcante desse compromisso foi nossa atuação estratégica com a <strong>ONG União dos Cegos</strong>. Desenvolvemos um plano de posicionamento digital completo, focando na humanização da marca e na clareza da comunicação visual para atrair novos apoiadores e voluntários.
-                </p>
-                <p>
-                    Através de uma gestão focada em tráfego orgânico e conteúdo relevante, conseguimos resultados expressivos: a comunidade digital da instituição cresceu de <strong>1.000 para mais de 4.500 seguidores</strong> engajados. Esse aumento de visibilidade permitiu que a ONG ampliasse o alcance de suas campanhas e fortalecesse sua missão no mercado.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Materiais Criativos: Banners, Flyers e Ebooks em largura total -->
-    <section id="criativos" class="container-fluid p-0 my-5">
-        <!-- Alterado de text-end para text-center para centralizar o título da seção -->
-        <div class="container text-center">
-            <!-- Removido o fundo e alterada a cor das letras para amarelo da marca -->
-            <h4 class="text-center text-sucess display-6 fw-bold mb-4">
-                Idéias de banners, flyers, cartazes,panfletos , ebooks e outros elementos gráficos desenvolvidos
-
-            </h4>
-        </div>
-        <!-- Container com fundo colorido para harmonizar com a imagem reduzida -->
-        <div class="flyer-section-bg">
-            <div class="container text-center">
-                <!-- Imagem com classe específica para controle de qualidade -->
-                <img src="img/flyers.png" alt="Nossas criações de design" class="img-flyer shadow-sm">
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Seção de Contato: Formulário para diagnóstico da empresa -->
-    <div id="contato" class="container my-5 py-5">
-        <div class="row justify-content-center">
-            <div class="col-md-8 bg-white p-5 rounded shadow">
-                <h2 class="text-center text-brand-purple mb-4">Fale Conosco</h2>
-                <p class="text-center text-muted mb-5">Conte-nos sobre sua empresa e como podemos ajudar.</p>
-                <form id="contactForm">
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label class="form-label text-brand-purple fw-bold">Nome</label>
-                            <input type="text" id="nome" class="form-control" placeholder="Seu nome" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label class="form-label text-brand-purple fw-bold">Telefone</label>
-                            <input type="tel" id="telefone" class="form-control" placeholder="(00) 00000-0000" required>
+            <div class="container py-5">
+                <div class="row g-4 justify-content-between">
+                    <div class="col-lg-5">
+                        <div class="servico-item-card p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/18.png" alt="Ícone Presença Digital" class="servico-icon me-3">
+                                <h4 class="servico-card-title mb-0">Presença Digital <span class="text-underline">Estratégica</span></h4>
+                            </div>
+                            <p class="servico-card-text">Gestão de redes sociais, criação de conteúdo e posicionamento para fortalecer sua marca e conectar com o público certo.</p>
                         </div>
                     </div>
-                    <div class="mb-3">
-                        <label class="form-label text-brand-purple fw-bold">Nome da Empresa</label>
-                        <input type="text" id="empresa" class="form-control" placeholder="Sua empresa" required>
+                    <div class="col-lg-5">
+                        <div class="servico-item-card p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/19.png" alt="Ícone Atrair Clientes" class="servico-icon me-3">
+                                <h4 class="servico-card-title mb-0">Estratégias para Atrair <span class="text-underline">clientes</span></h4>
+                            </div>
+                            <p class="servico-card-text">Ações digitais e comerciais focadas em geração de leads, prospecção e aumento de oportunidade de venda.</p>
+                        </div>
                     </div>
-                    <div class="mb-4">
-                        <label class="form-label text-brand-purple fw-bold">Qual a principal dor que a sua empresa tem hoje?</label>
-                        <textarea id="dor" class="form-control" rows="4" placeholder="Descreva aqui o seu maior desafio..."></textarea>
+                    <div class="col-lg-5">
+                        <div class="servico-item-card p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/20.png" alt="Ícone Posicionamento" class="servico-icon me-3">
+                                <h4 class="servico-card-title mb-0">Posicionamento & <span class="text-underline">Crescimento</span></h4>
+                            </div>
+                            <p class="servico-card-text">Desenvolvemos estratégias para empresas que desejam crescer de forma sólida, moderna e competitiva.</p>
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-cases px-5 py-2 shadow-sm">Enviar Mensagem</button>
+                    <div class="col-lg-5">
+                        <div class="servico-item-card p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/21.png" alt="Ícone Design" class="servico-icon me-3">
+                                <h4 class="servico-card-title mb-0">Design que gera <span class="text-underline">percepção</span></h4>
+                            </div>
+                            <p class="servico-card-text">Criação de identidade visual, materiais gráficos e designs que transmitem profissionalismo e valorizam sua marca.</p>
+                        </div>
                     </div>
-                </form>
+                    <div class="col-lg-5">
+                        <div class="servico-item-card p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/22.png" alt="Ícone Tecnologia" class="servico-icon me-3">
+                                <h4 class="servico-card-title mb-0">Soluções Inteligentes & <span class="text-underline">Tecnologia</span></h4>
+                            </div>
+                            <p class="servico-card-text">Desenvolvimento de sites, automações e ferramentas digitais que otimizam processos e potencializam resultados.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="servico-item-card p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/23.png" alt="Ícone Marketing" class="servico-icon me-3">
+                                <h4 class="servico-card-title mb-0">Marketing com visão <span class="text-underline">estratégica</span></h4>
+                            </div>
+                            <p class="servico-card-text">Mais do que posts e anúncios, criamos estratégias completas focadas em crescimento, autoridade e resultados reais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- --- MISSÃO, VISÃO E VALORES --- -->
+        <section class="mvv-section py-5">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <div class="mvv-card h-100 p-4">
+                            <div class="text-center mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-bullseye mvv-icon" viewBox="0 0 16 16">
+ <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+ <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10m0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12"/>
+ <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8"/>
+ <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+ </svg>
+
+                            </div>
+                            <h3 class="mvv-title text-center mb-3">Missão</h3>
+                            <p class="mvv-text text-center">
+                                Criar estratégias inovadoras de marketing e
+                                design que impulsionem o crescimento e a
+                                identidade das empresas, gerando impacto
+                                positivo no mercado.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mvv-card h-100 p-4">
+                            <div class="text-center mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-eye-fill mvv-icon" viewBox="0 0 16 16">
+ <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+ <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+ </svg>
+
+                            </div>
+                            <h3 class="mvv-title text-center mb-3">Visão</h3>
+                            <p class="mvv-text text-center">
+                                Ser referência no mercado de consultoria em
+                                marketing e design, ajudando empresas a
+                                alcançar seu potencial máximo com soluções
+                                criativas e eficazes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mvv-card h-100 p-4">
+                            <div class="text-center mb-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-people-fill mvv-icon" viewBox="0 0 16 16">
+                                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="mvv-title text-center mb-3">Valores</h3>
+                            <p class="mvv-text text-center">
+                                Criatividade e Inovação. Comprometimento com Resultados. Transparência e Ética. Personalização e Exclusividade. Excelência no Atendimento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- --- SOBRE A CEO --- -->
+        <section id="ceo" class="ceo-bio-section">
+            <div class="container-fluid px-0">
+                <div class="row align-items-center g-0">
+                    <div class="col-lg-5">
+                        <img src="img/CEO.png" alt="CEO CS Innovation" class="img-fluid ceo-bio-img">
+                    </div>
+                    <div class="col-lg-7 px-4 ps-lg-0 pe-lg-5 py-4">
+                        <h2 class="ceo-bio-title mb-2 text-center">Sobre a CEO</h2>
+                        <div class="ceo-quote-wrapper">
+                            <img src="img/aspas.png" alt="Aspas" class="quote-mark">
+                            <div class="ceo-bio-text">
+                                <p>
+                                    Sou uma profissional de marketing com experiência em estratégias de posicionamento, branding e crescimento digital, incluindo atuação em grandes empresas como o Hospital Israelita Albert Einstein. Formada em Marketing, com especialização em liderança pela Harvard Business School e também escritora, acredito que inovação, comunicação e design estratégico são pilares fundamentais para construir marcas fortes e negócios preparados para o futuro.
+                                </p>
+                                <p>
+                                    Na CS Innovation, desenvolvemos soluções criativas e inteligentes para empresas que desejam fortalecer sua presença digital, gerar autoridade e crescer de forma moderna e estratégica.
+                                </p>
+                                <p class="fw-bold mt-4">- Vamos construir o futuro da sua empresa?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- --- POR QUE A CS INNOVATION --- -->
+        <section id="diferenciais" class="why-cs-section py-5">
+            <div class="container py-5">
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="why-cs-title">Por que a CS Innovation?</h2>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="why-card p-4 h-100">
+                            <h3 class="why-card-title">Atendimento próximo e personalizado</h3>
+                            <p class="why-card-text">Participamos ativamente de eventos e reuniões e acompanhamento de estratégias</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="why-card p-4 h-100">
+                            <h3 class="why-card-title">Branding & projetos editoriais</h3>
+                            <p class="why-card-text">Transformamos conhecimento em materiais estratégicos como ebooks, apresentações e projetos editoriais que fortalecem o posicionamento da marca.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="why-card p-4 h-100">
+                            <h3 class="why-card-title">Tecnologia + Criatividade</h3>
+                            <p class="why-card-text">Aliamos design estratégico, inovação e tecnologia para criar marcas mais modernas e competitivas</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="why-card p-4 h-100">
+                            <h3 class="why-card-title">Marketing com visão comercial</h3>
+                            <p class="why-card-text">Unimos marketing e estratégia comercial para transformar presença digital em oportunidades de negócio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- --- FALE CONOSCO --- -->
+        <section id="contato" class="contact-section py-5">
+            <div class="container py-4">
+                <div class="contact-white-box p-4 p-md-5">
+                    <h2 class="contact-title text-center mb-2">FALE CONOSCO</h2>
+                    <h3 class="contact-subtitle text-center mb-4">Pronto para transformar sua presença digital?</h3>
+                    <p class="contact-text text-center mb-5">
+                        Conte um pouco sobre seu negócio e descubra como a CS Innovation pode ajudar sua empresa a atrair mais clientes, fortalecer sua marca e crescer com estratégia.
+                    </p>
+                    <form id="whatsappForm" class="contact-form">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" id="nome" name="nome" class="form-control" required placeholder="Seu nome completo">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="telefone" class="form-label">Telefone</label>
+                                <input type="tel" id="telefone" name="telefone" class="form-control" required placeholder="(00) 00000-0000">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" id="email" name="email" class="form-control" required placeholder="seu@email.com">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="empresa" class="form-label">Nome da Empresa</label>
+                                <input type="text" id="empresa" name="empresa" class="form-control" required placeholder="Sua empresa">
+                            </div>
+                            <div class="col-12">
+                                <label for="dor" class="form-label">Qual a principal dor que a sua empresa tem hoje?</label>
+                                <textarea id="dor" name="dor" class="form-control" rows="4" required placeholder="Descreva o principal desafio do seu negócio"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="lgpdConsent" required>
+                                    <label class="form-check-label contact-text text-start fs-6" for="lgpdConsent">
+                                        Estou de acordo com a <a href="politica-privacidade.html" class="text-decoration-underline" style="color: #61127B;">Política de Privacidade</a> e autorizo o tratamento dos meus dados para fins de contato e consultoria estratégica.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center mt-5">
+                                <button type="submit" class="btn btn-hero px-5">ENVIAR MENSAGEM</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- --- RODAPÉ --- -->
+        <footer class="footer-main py-5">
+            <div class="container">
+                <div class="row gy-4 align-items-center">
+                    <!-- Coluna 1: Logo e Copyright -->
+                    <div class="col-md-4 text-start">
+                        <img src="img/logo CS .png" alt="CS Innovation Logo" class="img-fluid mb-3" style="max-height: 70px;">
+                        <p class="mb-0 text-white opacity-75 small">&copy; 2024 CS Innovation. <br> Todos os direitos reservados.</p>
+                    </div>
+
+                    <!-- Coluna 2: Contato -->
+                    <div class="col-md-4 text-start">
+                        <h4 class="footer-title mb-3">Entre em contato</h4>
+                        <p class="mb-1">
+                            <a href="https://wa.me/5511958774637" class="footer-link">WhatsApp: (11) 95877-4637</a>
+                        </p>
+                        <p class="mb-0">
+                            <a href="mailto:consultoriacsinnovation@gmail.com" class="footer-link">consultoriacsinnovation@gmail.com</a>
+                        </p>
+                    </div>
+
+                    <!-- Coluna 3: Redes Sociais -->
+                    <div class="col-md-4 text-start">
+                        <h4 class="footer-title mb-3">Siga-nos</h4>
+                        <div class="d-flex justify-content-start gap-2">
+                            <a href="https://www.instagram.com/csinnovation_/" target="_blank" class="btn btn-social btn-instagram">Instagram</a>
+                            <a href="https://www.linkedin.com/company/cs-innovation/" target="_blank" class="btn btn-social btn-linkedin">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4 border-white opacity-25">
+                <div class="text-start">
+                    <small><a href="politica-privacidade.html" class="text-white text-decoration-underline opacity-75">Política de Privacidade</a> | <a href="termos-uso.html" class="text-white text-decoration-underline opacity-75">Termos de Uso</a></small>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- --- BANNER LGPD --- -->
+        <div id="cookieBanner" class="cookie-banner">
+            <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between py-3">
+                <p class="mb-3 mb-md-0 text-white fs-6">
+                    Utilizamos cookies e dados de navegação para melhorar sua experiência e oferecer conteúdos personalizados, de acordo com a nossa <a href="politica-privacidade.html" class="text-white text-decoration-underline">Política de Privacidade</a>.
+                </p>
+                <button id="acceptCookies" class="btn btn-hero btn-sm px-4">ACEITAR</button>
             </div>
         </div>
-    </div>
-
-    <!-- Rodapé: fundo preto, letras brancas e botões sociais -->
-    <footer class="bg-dark text-white py-5">
-        <div class="container text-center">
-            <h4 class="mb-4">Siga a CS Innovation nas redes sociais</h4>
-            <div class="d-flex justify-content-center gap-3 mb-4">
-                <!-- Botões sociais: Instagram, Facebook e LinkedIn -->
-                <a href="https://www.instagram.com/csinnovation_/" class="btn btn-outline-light rounded-circle social-btn"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/cs-innovation/posts/?feedView=all" class="btn btn-outline-light rounded-circle social-btn"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <hr class="my-4 border-secondary">
-            <p class="mb-0 text-muted small">&copy; 2024 CS Innovation. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+    </main>
 
 
-    <!-- Importação de scripts JavaScript -->
-    <script src="jquery.js"> </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
-    <script src="Scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
