@@ -17,7 +17,7 @@ document.getElementById('whatsappForm').addEventListener('submit', function(e) {
     const empresa = document.getElementById('empresa').value;
     const dor = document.getElementById('dor').value;
     
-    const mensagem = `Olá! Gostaria de uma analise estratégica:
+    const mensagem = `Olá! Gostaria de uma análise estratégica:
 
 *Nome:* ${nome}
 *Telefone:* ${telefone}
