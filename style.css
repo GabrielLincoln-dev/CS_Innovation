@@ -91,7 +91,7 @@ body {
     font-family: var(--font-title);
     font-weight: 700;
     text-align: left;
-    font-size: 24px;
+    font-size: 40px;
     color: #FFFFFF;
     line-height: 1.2;
     margin-bottom: 1.5rem;
@@ -108,7 +108,7 @@ body {
     font-weight: 300;
     text-align: left;
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 20px;
     max-width: 540px;
     margin-bottom: 2rem;
 }
@@ -155,7 +155,7 @@ body {
 }
 
 .ceo-img {
-    max-height: 500px;
+    max-height: 650px;
     width: auto;
     display: block;
 }
@@ -680,7 +680,7 @@ body {
         padding-left: 20px; 
         padding-right: 20px; 
     }
-    .hero-title, .cta-title, .mvv-title { font-size: 28px; text-align: center; }
+    .hero-title, .cta-title, .mvv-title { font-size: 32px; text-align: center; }
     .hero-title { text-align: left; }
     .hero-description, .cta-description, .mvv-text { text-align: left; }
 
